@@ -1,0 +1,26 @@
+.b1{
+	background-color: black;
+	text-align: right;
+	color:white;
+}
+
+
+table, td, th {
+    border: 2px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    text-align: left;
+    padding: 15px;
+}
+th{
+    text-align: center;
+    padding: 15px;
+    color:white;
+    background-color: orange;
+}

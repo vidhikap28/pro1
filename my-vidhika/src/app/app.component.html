@@ -1,0 +1,56 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="b1">
+<div>
+<img src="assets/images/homedepot.jpg" alt="logo" width="70">
+  <h1>
+    {{title}}
+  </h1>
+</div>
+</div>
+<div>
+  <table>
+    <tr>
+    <th></th>
+    <th *ngFor="let title of app">{{title}}</th>
+  </tr>
+ <tr *ngFor="let event of events">
+   <td>
+       <input type="radio" name="event.adNumber" [(ngModel)]="event.selected" >
+   </td>
+   <td>
+       <span>{{event.adNumber}}</span> 
+   </td>
+   <td>
+       <span>{{event.adName}}</span> 
+   </td>
+   <td>
+       <span>{{event.adPricingNumbers}}</span> 
+   </td>
+   <td>
+       <span>{{event.adStartDate}}</span> 
+   </td>
+   <td>
+       <span>{{event.adEndDate}}</span> 
+   </td>
+  </tr>
+</table>
+</div>
+
+  <div class="form-group">
+    <select class="form-control" [(ngModel)]="selectValue" >
+      <option *ngFor="let event of events" [value]="event.adName">{{event.adName}}</option>
+    </select>
+  </div>
+  <span>
+    {{selectValue}}
+  </span>
+
+<div class="form-group">
+    <select class="form-control"  [(ngModel)]="selectValue">
+      <option *ngFor="let fruit of fruits" [value]="fruits">{{fruit}}</option>
+    </select>
+  </div>
+  <div>
+ <button type="button" onclick="">active</button>
+ <
+ </div>
